@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SEARCH</title>
-</head>
-<body>
-    <form method="post" action="/searches"> 
-        <div>
-          <input name="title" placeholder="Search By Title" />
-        </div>
-        <div>
-          <input name="author" placeholder="Search By Author" />
-        </div>
-        <div>
-          <button type="submit">Search</button>
-        </div>
-      </form>
-</body>
-
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>SEARCH</title>
+      <link rel="stylesheet" href="/styles/base.css">
+  </head>
+  <body>
+    <header>
+      <!-- <%- include('../../layout/header') %> -->
+      
+    </header>
+      <div id="pinkify"><h1>
+        Search For a Book Either By Title or Author
+      </h1 ></div>
+      <form method="post" action="/searches" id="searchForm"> 
+          <div>
+            <input name="title" placeholder="Search By Title" />
+          </div>
+          <div>
+            <input name="author" placeholder="Search By Author" />
+          </div>
+          <div>
+            <button type="submit">Search</button>
+          </div>
+        </form>
+  </body>
 </html>
